@@ -7,6 +7,9 @@ import './style.css';
 
 const TemplateWrapper = ({children}) => (
     <div>
+        <Helmet>
+            <title>AR - advokacie</title>
+        </Helmet>
         <Navbar />
         <div className="top-divider">
         </div>
