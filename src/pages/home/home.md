@@ -1,10 +1,8 @@
 ---
-templateKey: 'home-page'
-path: /
-title: Home page
+templateKey: home-page
 ---
-### Moje jmeno
-Mgr. Aneta Ryvolova
+# Mgr. Aneta Ryvolova
 
-### Pobocka
-Brno a MB
+Sidlo: Brno
+
+Pobocka: Moravske Budejovice
