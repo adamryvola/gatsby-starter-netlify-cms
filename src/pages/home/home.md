@@ -2,8 +2,12 @@
 templateKey: home-page
 path: /
 ---
-# Mgr. Aneta Ryvolova
+# Mgr. Aneta Ryvolová, advokátka
 
-Sidlo: Brno
+Česká advokátní komora vede pod evidenčním číslem 17379
 
-Pobocka: Fišerova 1619, 676 02 Moravske Budejovice
+sídlo: Mikulovská 4058/5, 628 00 Brno
+
+pobočka: Fišerova 1619, 676 02 Moravské Budějovice
+
+V oblasti daňového poradenství a účetního poradenství je spolupracováno s obchodní společností [ADANE, s.r.o.](www.adane.cz), v oblasti právní pomoci s [JUDr. Ivanou Lorenzovou, advokátkou](www.aklorenzova.cz) se sídlem v Brně.
