@@ -2,8 +2,8 @@
 templateKey: home-page
 path: /
 ---
-# Mgr. Aneta Ryvolova uprava
+# Mgr. Aneta Ryvolova
 
 Sidlo: Brno
 
-Pobocka: Moravske Budejovice
+Pobocka: Fišerova 1619, 676 02 Moravske Budejovice
