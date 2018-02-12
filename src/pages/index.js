@@ -21,43 +21,26 @@ export default class IndexPage extends React.Component {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
+    console.log('DATA', data);
+
     return (
-      <section className="section">
-        <Script
-          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
-          onLoad={() => this.handleScriptLoad()}
-        />
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-          </div>
-          {posts
-            .filter(post => post.node.frontmatter.templateKey === "blog-post")
-            .map(({ node: post }) => (
-              <div
-                className="content"
-                style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
-                key={post.id}
-              >
-                <p>
-                  <Link className="has-text-primary" to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.frontmatter.path}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
+        <div>
+            <h1>Mgr. Aneta Ryvolová, advokátka</h1>
+            <p>Česká advokátní komora vede pod evidenčním číslem 17379</p>
+            <p>sídlo: Mikulovská 4058/5, 628 00 Brno</p>
+            <p>pobočka: Fišerova 1619, 676 02 Moravské Budějovice</p>
+            <p>
+                V oblasti daňového poradenství a účetního poradenství je
+                spolupracováno s obchodní společností <a href="http://www.adane.cz" target="_blank"
+                                                         className="inline-link">ADANE,
+                s.r.o.</a>, v oblasti právní pomoci
+                s <a href="http://www.aklorenzova.cz" target="_blank" className="inline-link">JUDr. Ivanou
+                Lorenzovou,
+                advokátkou</a> se sídlem v Brně.
+            </p>
+            <img className="social-ico" src="images/fb-ico.png"/>
+            <img className="social-ico" src="images/lin-ico.png"/>
         </div>
-      </section>
     );
   }
 }

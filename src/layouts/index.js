@@ -3,18 +3,28 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Navbar from '../components/Navbar';
-import './all.sass';
+import './style.css';
 
-const TemplateWrapper = ({ children }) => (
-  <div>
-    <Helmet title="Home | Gatsby + Netlify CMS" />
-    <Navbar />
-    <div>{children()}</div>
-  </div>
+const TemplateWrapper = ({children}) => (
+    <div>
+        <Navbar />
+        <div className="top-divider">
+        </div>
+        <div className="content-wrapper">
+            <div className="content">
+                {children()}
+            </div>
+        </div>
+        <div className="bottom-divider">
+        </div>
+        <div className="footer">
+            AR 2018
+        </div>
+    </div>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
 };
 
 export default TemplateWrapper;
