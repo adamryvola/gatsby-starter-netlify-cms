@@ -2,7 +2,7 @@
 templateKey: home-page
 path: /
 ---
-# Mgr. Aneta Ryvolova
+# Mgr. Aneta Ryvolova uprava
 
 Sidlo: Brno
 
