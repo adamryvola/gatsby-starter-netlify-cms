@@ -16,6 +16,14 @@ a {
     text-decoration: none;
 }
 
+.content-wrapper a:-webkit-any-link {
+    text-decoration: underline;
+    color: var(--general-grey);
+    text-decoration-skip: none;
+    text-decoration-skip-ink: none;
+    -webkit-text-decoration-skip: none;
+}
+
 .mobile-menu {
     display: none;
 }
@@ -152,14 +160,6 @@ a {
 
 .menu-item:hover {
     opacity: 1;
-}
-
-.inline-link {
-    text-decoration: underline;
-    color: var(--general-grey);
-    text-decoration-skip: none;
-    text-decoration-skip-ink: none;
-    -webkit-text-decoration-skip: none;
 }
 
 .social-ico {
