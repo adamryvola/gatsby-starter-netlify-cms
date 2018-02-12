@@ -1,5 +1,6 @@
 ---
 templateKey: home-page
+path: /
 ---
 # Mgr. Aneta Ryvolova
 
