@@ -54,8 +54,8 @@ collections:
   - name: "settings"
     label: "Settings"
     files:
-      - file: "src/data/settings.md"
-        label: "General settings"
-        name: "general-settings"
+      - file: "src/settings/web-settings.md"
+        label: "Web settings"
+        name: "web-settings"
         fields:
           - {label: "Web title", name: "web-title", widget: "string", default: "My new web"}
