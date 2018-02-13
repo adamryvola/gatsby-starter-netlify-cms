@@ -53,6 +53,8 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "settings"
     label: "Settings"
+    editor:
+      preview: false
     files:
       - file: "src/settings/web-settings.md"
         label: "Web settings"
