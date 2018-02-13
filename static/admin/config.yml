@@ -6,11 +6,6 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "settings"
-    label: "Settings"
-    file: "src/data/settigs.md"
-    fields:
-      - {label: "Web title", name: "web-title", widget: "string", default: "My new web"}
   - name: "pages"
     label: "Pages"
     files:
@@ -56,3 +51,11 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "settings"
+    label: "Settings"
+    files:
+      - file: "src/data/settings.md"
+        label: "General settings"
+        name: "general-settings"
+        fields:
+          - {label: "Web title", name: "web-title", widget: "string", default: "My new web"}
