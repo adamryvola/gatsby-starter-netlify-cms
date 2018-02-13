@@ -10,4 +10,4 @@ sídlo: Mikulovská 4058/5, 628 00 Brno
 
 pobočka: Fišerova 1619, 676 02 Moravské Budějovice
 
-V oblasti daňového poradenství a účetního poradenství je spolupracováno s obchodní společností [ADANE, s.r.o.](www.adane.cz), v oblasti právní pomoci s [JUDr. Ivanou Lorenzovou, advokátkou](www.aklorenzova.cz) se sídlem v Brně.
+V oblasti daňového poradenství a účetního poradenství je spolupracováno s obchodní společností [ADANE, s.r.o.](http://www.adane.cz), v oblasti právní pomoci s [JUDr. Ivanou Lorenzovou, advokátkou](http://www.aklorenzova.cz) se sídlem v Brně.
