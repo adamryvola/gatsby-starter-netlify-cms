@@ -39,7 +39,7 @@
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-cms": "babel ./src/cms --out-dir ./static/admin/cms-config"
+    "build-cms": "webpack ./src/cms --out-dir ./static/admin/cms-config"
   },
   "devDependencies": {
     "prettier": "^1.7.4"
