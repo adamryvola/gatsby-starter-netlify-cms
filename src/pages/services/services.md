@@ -2,8 +2,11 @@
 templateKey: services-page
 path: /services
 services:
-  - title: Sluzba jedna
-    content: Popis prvni sluzby
-  - title: Sluzba dva
-    content: Popis druhe sluzby
+  - content: Popis prvni sluzby
+    title: Sluzba jedna
+  - content: Popis druhe sluzby
+    title: Sluzba dva
+  - content: Delam smlouvy na pozadani
+    title: Smlovy
 ---
+
