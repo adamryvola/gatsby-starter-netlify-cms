@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
@@ -121,7 +121,7 @@ exports.modifyWebpackConfig = (
         plugins: plugins(stage),
     });
 
-    module(config, stage);
+    // module(config, stage);
 
-    return config
+    return config;
 };
