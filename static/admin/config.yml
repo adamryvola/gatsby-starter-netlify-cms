@@ -22,12 +22,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/services"}
-          - label: "Služby"
-            name: "body"
-            widget: "list"
-            - fields:
-              - {label: "Nadpis", name: "title", widget: "string"}
-              - {label: "Obsah", name: "content", widget: "string"}
+          - {label: "Služby", name: "body", widget: "list", fields: [{label: "Nadpis", name: "title", widget: "string"}, {label: "Obsah", name: "content", widget: "string"}]}
   - name: "settings"
     label: "Settings"
     editor:

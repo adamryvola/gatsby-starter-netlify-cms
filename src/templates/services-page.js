@@ -1,23 +1,42 @@
 import React from 'react';
 import graphql from 'graphql';
-import Content, { HTMLContent } from '../components/Content';
+import Content from '../components/Content';
 
-export const ServicesPageTemplate = ({ content, contentComponent }) => {
-    const PageContent = contentComponent || Content;
+export const ServicesPageTemplate = ({services}) => {
     return (
-        <PageContent className="content" content={content} />
+        <div>
+            <button id="expand-controll">+ rozbalit vše</button>
+            <Content className="content" content={
+                services.map((service, i) => (
+                    <div key={i} className="acc_panel">
+                        <button className="acc_panel_title">
+                            {service.title}
+                        </button>
+                        <div className="acc_panel_content">
+                            {service.content}
+                        </div>
+                    </div>
+                ))
+            }/>
+        </div>
     );
 };
 
-export default ({ data }) => {
-    const { html } = data.markdownRemark;
-    return (<ServicesPageTemplate contentComponent={HTMLContent} content={html} />);
+export default ({data}) => {
+    const {frontmatter} = data.markdownRemark;
+    return (<ServicesPageTemplate services={frontmatter.services}/>);
 };
 
-export const servicesPageQuery = graphql`
-  query ServicesPage($path: String!) {
+export const productPageQuery = graphql`
+  query ProductPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      services
+      frontmatter {
+        path
+        services {
+            title
+            content
+        }
+      }
     }
   }
 `;
