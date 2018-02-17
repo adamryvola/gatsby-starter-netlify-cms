@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     entry: './src/cms/index.js',
     output: {
-        path: path.resolve(__dirname, 'static/cms-config'),
+        path: path.resolve(__dirname, 'static/admin/cms-config'),
         filename: 'index.js',
     },
     module: {
