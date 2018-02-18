@@ -7,7 +7,7 @@ public_folder: /img
 
 collections:
   - name: "pages"
-    label: "Pages"
+    label: "Stránky"
     files:
       - file: "src/pages/home/home.md"
         label: "Titulní strana"
@@ -39,4 +39,6 @@ collections:
         label: "Web settings"
         name: "web-settings"
         fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "settings-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "settings"}
           - {label: "Název webu", name: "title", widget: "string", default: "My new web"}

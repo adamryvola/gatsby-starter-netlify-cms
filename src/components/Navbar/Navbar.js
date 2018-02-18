@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import BurgerImg from './burger.png';
 
 export default class Navbar extends Component {
 
@@ -42,7 +43,7 @@ export default class Navbar extends Component {
           </div>
           <div className="mobile-menu">
             <button id="burger-butt" onClick={e => this.toggleMenu()}>
-              <img src="images/burger.png" height="30px"/>
+              <img src={BurgerImg} height="30px"/>
             </button>
             <a href="./index.html">
               <div className="logo">
