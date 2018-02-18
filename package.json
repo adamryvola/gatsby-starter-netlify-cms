@@ -5,9 +5,13 @@
   "author": "Austin Green",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "cross-env": "^5.1.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "^1.9.192",
@@ -39,7 +43,7 @@
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-cms": "webpack ./src/cms --out-dir ./static/admin/cms-config"
+    "build-cms": "webpack"
   },
   "devDependencies": {
     "prettier": "^1.7.4"

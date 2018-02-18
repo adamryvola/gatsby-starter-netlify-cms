@@ -42,5 +42,3 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     });
   });
 };
-
-/* CREATE index.html */
