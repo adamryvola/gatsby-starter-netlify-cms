@@ -16,6 +16,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/reward/reward.md"
+        label: "Odměna advokáta"
+        name: "reward"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "reward-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/reward"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/services/services.md"
         label: "Služby"
         name: "services"
@@ -24,7 +31,7 @@ collections:
           - {label: "Path", name: "path", widget: "hidden", default: "/services"}
           - {label: "Služby", name: "services", widget: "list", fields: [{label: "Nadpis", name: "title", widget: "string"}, {label: "Obsah", name: "content", widget: "string"}]}
   - name: "settings"
-    label: "Settings"
+    label: "Nastavení"
     editor:
       preview: false
     files:
@@ -32,4 +39,4 @@ collections:
         label: "Web settings"
         name: "web-settings"
         fields:
-          - {label: "Web title", name: "web-title", widget: "string", default: "My new web"}
+          - {label: "Název webu", name: "title", widget: "string", default: "My new web"}

@@ -1,3 +1,5 @@
 ---
-web-title: My New Web
+path: settings
+templateKey: settings-page
+title: AR - advokacie
 ---
