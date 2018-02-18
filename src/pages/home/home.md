@@ -6,8 +6,6 @@ path: /
 
 Česká advokátní komora vede pod evidenčním číslem 17379
 
-EDITACE
-
 sídlo: Mikulovská 4058/5, 628 00 Brno
 
 pobočka: Fišerova 1619, 676 02 Moravské Budějovice
