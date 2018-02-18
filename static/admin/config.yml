@@ -23,6 +23,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "reward-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/reward"}
           - {label: "Body", name: "body", widget: "markdown"}
+      - file: "src/pages/contacts/contacts.md"
+        label: "Kontakty"
+        name: "contacts"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contacts-page"}
+          - {label: "Path", name: "path", widget: "hidden", default: "/contacts"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/services/services.md"
         label: "Služby"
         name: "services"
