@@ -1,6 +1,6 @@
 ---
-path: settings
 templateKey: settings-page
-title: Advokacie Ryvolová
+path: settings
+title: AR - advokacie
 ---
 
