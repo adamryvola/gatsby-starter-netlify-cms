@@ -8,6 +8,7 @@
     "babel-core": "^6.26.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "^1.9.202",
+    "gatsby-cli": "^1.1.40",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-netlify-cms": "^1.0.2",
     "gatsby-plugin-react-helmet": "^1.0.5",
@@ -20,7 +21,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-helmet": "^5.2.0",
-    "webpack": "^3.11.0"
+    "webpack": "^2.5.1"
   },
   "keywords": [
     "gatsby"
@@ -36,7 +37,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.1",
+    "babel-loader": "^6.4.1",
     "prettier": "^1.7.4"
   }
 }
