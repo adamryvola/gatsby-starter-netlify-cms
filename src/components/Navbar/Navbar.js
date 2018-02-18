@@ -29,32 +29,32 @@ export default class Navbar extends Component {
     return (
         <div className="menu-wrapper">
           <div className="menu">
-            <a href="./index.html">
+            <Link to="/">
               <div className="logo">
                 <div className="logo-img"></div>
               </div>
-            </a>
+            </Link>
             <div className="menu-items">
-              <a href="/" className="menu-item active-item">DOMŮ</a>
-              <a href="/services" className="menu-item">SLUŽBY</a>
-              <a href="/reward" className="menu-item">ODMĚNA ADVOKÁTA</a>
-              <a href="/contacts" className="menu-item">KONTAKTY</a>
+              <Link to="/" className="menu-item active-item">DOMŮ</Link>
+              <Link to="/services" className="menu-item">SLUŽBY</Link>
+              <Link to="/reward" className="menu-item">ODMĚNA ADVOKÁTA</Link>
+              <Link to="/contacts" className="menu-item">KONTAKTY</Link>
             </div>
           </div>
           <div className="mobile-menu">
             <button id="burger-butt" onClick={e => this.toggleMenu()}>
               <img src={BurgerImg} height="30px"/>
             </button>
-            <a href="./index.html">
+            <Link to="/">
               <div className="logo">
                 <div className="logo-img"></div>
               </div>
-            </a>
+            </Link>
             <div className="menu-items">
-              <a href="/" className="menu-item active-item">DOMŮ</a><br/>
-              <a href="/services" className="menu-item">SLUŽBY</a><br/>
-              <a href="/reward" className="menu-item">ODMĚNA ADVOKÁTA</a><br/>
-              <a href="/contacts" className="menu-item">KONTAKTY</a><br/>
+              <Link to="/" className="menu-item active-item">DOMŮ</Link><br/>
+              <Link to="/services" className="menu-item">SLUŽBY</Link><br/>
+              <Link to="/reward" className="menu-item">ODMĚNA ADVOKÁTA</Link><br/>
+              <Link to="/contacts" className="menu-item">KONTAKTY</Link><br/>
             </div>
           </div>
         </div>
