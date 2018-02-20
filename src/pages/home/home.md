@@ -4,7 +4,7 @@ path: /
 ---
 # Mgr. Aneta Ryvolová, advokátka
 
-údaj o zápisu v seznamu advokátů: Česká advokátní komora vede pod evidenčním číslem 17379,
+údaj o zápisu v seznamu advokátů: Česká advokátní komora vede pod ev. číslem 17379,
 
 sídlo: Mikulovská 4058/5, 628 00 Brno,
 
