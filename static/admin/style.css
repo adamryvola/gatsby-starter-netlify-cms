@@ -20,7 +20,6 @@ a {
 li:before {
     content: "-";
     float: left;
-    margin-top: 4px;
     margin-left: -17px;
 }
 
