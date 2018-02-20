@@ -8,6 +8,7 @@ path: /
 
 sídlo: Mikulovská 4058/5, 628 00 Brno,
 
+\
 spolupráce v oblasti advokacie s [JUDr. Ivanou Lorenzovou, advokátkou](http://www.aklorenzova.cz) se sídlem v Brně,
 
 spolupráce v oblasti daňového poradenství s obchodní společností [ADANE, s.r.o.](http://www.adane.cz)
