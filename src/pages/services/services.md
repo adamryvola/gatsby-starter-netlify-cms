@@ -34,16 +34,10 @@ services:
 ---
 Poskytování právních služeb se děje zejména těmito způsoby:
 
-\- osobní právní porada s klientem, v určitých případech je možno dohodnout komunikaci a poskytování služeb prostřednictvím emailu a telefonu bez nutnosti osobní návštěvy;
-
-\- sepis listin o právním jednání, zejména sepisem smluv;
-
-\- sepis právních rozborů;
-
-\- převzetí a příprava zastoupení, prostudování věci;
-
-\- sepis písemného podání nebo návrhu a výzvy;
-
-\- jednání s protistranou či obchodním partnerem, na kterém je klient zastoupen;
-
-\- účast na jednání před soudem.
+* osobní právní porada s klientem, v určitých případech je možno dohodnout komunikaci a poskytování služeb prostřednictvím emailu a telefonu bez nutnosti osobní návštěvy;
+* sepis listin o právním jednání, zejména sepisem smluv;
+* sepis právních rozborů;
+* převzetí a příprava zastoupení, prostudování věci;
+* sepis písemného podání nebo návrhu a výzvy;
+* jednání s protistranou či obchodním partnerem, na kterém je klient zastoupen;
+* účast na jednání před soudem.
