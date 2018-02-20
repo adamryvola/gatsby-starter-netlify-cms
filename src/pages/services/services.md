@@ -1,7 +1,10 @@
 ---
 templateKey: services-page
 path: /services
-intro: Uvod
+intro: >-
+  Právní služby jsou klientovi poskytovány výhradně v níže uvedených oblastech
+  práva, aby byla zachována jejich nejvyšší možná kvalita a odbornost, přičemž
+  ke každému klientovi je přistupováno individuálně dle jeho potřeb:
 services:
   - content: >-
       zejména sepis smluv - darování, koupě, výprosa, výpůjčka, nájem, pacht,
