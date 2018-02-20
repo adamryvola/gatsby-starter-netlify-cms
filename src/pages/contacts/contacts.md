@@ -2,7 +2,7 @@
 templateKey: contacts-page
 path: /contacts
 ---
-Mgr. Aneta Ryvolová
+Mgr. Aneta Ryvolová, advokátka
 
 ar@advokacieryvolova.cz
 
