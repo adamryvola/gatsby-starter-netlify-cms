@@ -23,4 +23,6 @@ IČO: 01888226
 údaj o zápisu v seznamu advokátů: \
 Česká advokátní komora vede pod evidenčním číslem 17379
 
+identifikátor datové schránky: 8j8ar2u
+
 číslo účtu u banky: xxx/2700
