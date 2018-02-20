@@ -61,10 +61,11 @@ export class ServicesPageTemplate extends Component {
     }
 
     render() {
-        const {services, text} = this.props;
+        const {services, text, intro} = this.props;
         const {someExpanded} = this.state;
         return (
             <div>
+                <HTMLContent content={intro} />
                 <button id="expand-controll"
                         onClick={e => this.expandToggle()}>{someExpanded ? COLLAPSE_ALL : EXPAND_ALL}</button>
                 <Content className="content" content={
@@ -90,7 +91,7 @@ export class ServicesPageTemplate extends Component {
 export default ({data}) => {
     console.log('DATA', data);
     const {frontmatter, html} = data.markdownRemark;
-    return (<ServicesPageTemplate services={frontmatter.services} text={html}/>);
+    return (<ServicesPageTemplate services={frontmatter.services} intro={frontmatter.intro} text={html}/>);
 };
 
 export const servicesPageQuery = graphql`
@@ -98,6 +99,7 @@ export const servicesPageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         path
+        intro
         services {
             title
             content
