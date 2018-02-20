@@ -11,7 +11,7 @@ services:
   - content: >-
       zejména sepis listin pro založení obchodní korporace, sepis listin pro
       změnu výše základního kapitálu obchodní korporace, sepis rozhodnutí
-      jediného společníka, resp. sepis zápisu z valné hromady, sepis smluv o
+      jediného společníka, resp. sepis zápisů z valných hromad, sepis smluv o
       výkonu funkce, sepis zpráv o vztazích;
     title: právo obchodních společností a družstev
   - content: >-
