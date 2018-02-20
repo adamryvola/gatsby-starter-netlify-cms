@@ -64,32 +64,29 @@ export class ServicesPageTemplate extends Component {
         const {services, text, intro} = this.props;
         const {someExpanded} = this.state;
         return (
-            <div>
-                <HTMLContent content={intro} />
-                <button id="expand-controll"
-                        onClick={e => this.expandToggle()}>{someExpanded ? COLLAPSE_ALL : EXPAND_ALL}</button>
-                <Content className="content" content={
-                    <div>
-                        {services.map((service, i) => (
-                            <div key={i} className="acc_panel">
-                                <button onClick={e => this.expandPanel(i)} className="acc_panel_title">
-                                    {service.title}
-                                </button>
-                                <div className="acc_panel_content">
-                                    {service.content}
-                                </div>
+            <Content className="content" content={
+                <div>
+                    <HTMLContent content={intro}/>
+                    <button id="expand-controll"
+                            onClick={e => this.expandToggle()}>{someExpanded ? COLLAPSE_ALL : EXPAND_ALL}</button>
+                    {services.map((service, i) => (
+                        <div key={i} className="acc_panel">
+                            <button onClick={e => this.expandPanel(i)} className="acc_panel_title">
+                                {service.title}
+                            </button>
+                            <div className="acc_panel_content">
+                                {service.content}
                             </div>
-                        ))}
-                        <HTMLContent content={text} />
-                    </div>
-                }/>
-            </div>
+                        </div>
+                    ))}
+                    <HTMLContent content={text}/>
+                </div>
+            }/>
         )
     }
 }
 
 export default ({data}) => {
-    console.log('DATA', data);
     const {frontmatter, html} = data.markdownRemark;
     return (<ServicesPageTemplate services={frontmatter.services} intro={frontmatter.intro} text={html}/>);
 };

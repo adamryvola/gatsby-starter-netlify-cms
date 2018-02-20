@@ -1,6 +1,7 @@
 ---
 templateKey: services-page
 path: /services
+intro: Uvod
 services:
   - content: >-
       zejména sepis smluv - darování, koupě, výprosa, výpůjčka, nájem, pacht,

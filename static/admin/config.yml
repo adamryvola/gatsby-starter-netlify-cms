@@ -36,7 +36,7 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "services-page"}
           - {label: "Path", name: "path", widget: "hidden", default: "/services"}
-          - {label: "Úvod", name: "intro", widget: "string", default: "Uvod"}
+          - {label: "Úvod", name: "intro", widget: "string"}
           - {label: "Služby", name: "services", widget: "list", fields: [{label: "Nadpis", name: "title", widget: "string"}, {label: "Obsah", name: "content", widget: "string"}]}
           - {label: "Závěr", name: "body", widget: "markdown", default: ""}
   - name: "settings"
