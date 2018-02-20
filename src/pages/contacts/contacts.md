@@ -6,7 +6,7 @@ path: /contacts
 
 Mgr. Aneta Ryvolová, advokátka
 
-![](/img/icons8-secured-letter-100.png)
+![ar@advokacieryvolova.czl](/img/icons8-secured-letter-100.png)
 
 ar@advokacieryvolova.cz
 
