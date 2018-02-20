@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import graphql from 'graphql';
-import Content from '../components/Content';
+import Content, {HTMLContent} from '../components/Content';
 
 const EXPAND_ALL = '+ rozbalit vše';
 const COLLAPSE_ALL = '- sbalit vše';
@@ -48,7 +48,7 @@ export class ServicesPageTemplate extends Component {
             someExpanded: false,
         });
         const panel = panels[index].children[0].nextElementSibling;
-        if (panel.style.maxHeight){
+        if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
             panel.style.padding = 0;
         } else {
@@ -61,22 +61,26 @@ export class ServicesPageTemplate extends Component {
     }
 
     render() {
-        const { services } = this.props;
-        const { someExpanded } = this.state;
-        return(
+        const {services, text} = this.props;
+        const {someExpanded} = this.state;
+        return (
             <div>
-                <button id="expand-controll" onClick={e => this.expandToggle()}>{someExpanded ? COLLAPSE_ALL : EXPAND_ALL}</button>
+                <button id="expand-controll"
+                        onClick={e => this.expandToggle()}>{someExpanded ? COLLAPSE_ALL : EXPAND_ALL}</button>
                 <Content className="content" content={
-                    services.map((service, i) => (
-                        <div key={i} className="acc_panel">
-                            <button onClick={e => this.expandPanel(i)} className="acc_panel_title">
-                                {service.title}
-                            </button>
-                            <div className="acc_panel_content">
-                                {service.content}
+                    <div>
+                        {services.map((service, i) => (
+                            <div key={i} className="acc_panel">
+                                <button onClick={e => this.expandPanel(i)} className="acc_panel_title">
+                                    {service.title}
+                                </button>
+                                <div className="acc_panel_content">
+                                    {service.content}
+                                </div>
                             </div>
-                        </div>
-                    ))
+                        ))}
+                        <HTMLContent content={text} />
+                    </div>
                 }/>
             </div>
         )
@@ -84,12 +88,13 @@ export class ServicesPageTemplate extends Component {
 }
 
 export default ({data}) => {
-    const {frontmatter} = data.markdownRemark;
-    return (<ServicesPageTemplate services={frontmatter.services}/>);
+    console.log('DATA', data);
+    const {frontmatter, html} = data.markdownRemark;
+    return (<ServicesPageTemplate services={frontmatter.services} text={html}/>);
 };
 
-export const productPageQuery = graphql`
-  query ProductPage($path: String!) {
+export const servicesPageQuery = graphql`
+  query ServicesPage($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       frontmatter {
         path
@@ -98,6 +103,7 @@ export const productPageQuery = graphql`
             content
         }
       }
+      html
     }
   }
 `;
